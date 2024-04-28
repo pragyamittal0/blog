@@ -1,0 +1,257 @@
+
+.heading1{
+    font-family: cursive;
+    font-style: italic;
+    font-weight: bold;
+    padding: 10px;
+    text-shadow: 2px 2px 2px rgb(222, 149, 149);
+    text-align: left;
+    
+}
+.intro1{
+  background-image: url("images/travel2.jpeg");
+  background-size: cover;
+  height: 100%;
+}
+.heading2{
+  text-align: center;
+  font-style: italic;
+  text-shadow: 2px 2px 2px rgba(235, 89, 52, 0.779);
+  font-size: 25px;
+  padding-top: 140px;
+  padding-left: 60px;
+}
+.para1{
+    padding-bottom: 0px;
+    padding-top: 10px;
+    padding-left: 50px;
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+}
+.heading{
+  text-align: center;
+  font-style: italic;
+  text-shadow: 2px 2px 2px rgba(235, 89, 52, 0.779);
+  font-size: 25px;
+}
+
+.motivation{
+    background-image: url("images/travel2.jpeg");
+    height: 100%;
+    background-size: cover;
+    
+}
+.heading3{
+    text-align: center;
+    font-style: italic;
+    text-shadow: 2px 2px 2px rgba(235, 89, 52, 0.779);
+    font-size: 25px;
+    padding-top: 140px;
+    padding-left: 60px;
+}
+.para2{
+    padding: 0 40px 40px 40px;
+    text-align: center;
+    font-size: 23px;
+    font-style: italic;
+    margin-left: 60px;
+    
+}
+.navbar {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+  
+.head{
+    font-family: cursive;
+    font-style: italic;
+    font-weight: bold;
+    padding: 10px;
+    text-shadow: 2px 2px 2px rgb(222, 149, 149);
+    text-align: left;
+}
+.method{
+  background-color: white;
+  background-size: cover;
+  height: fit-content;
+  
+}
+.heading4{
+  
+  padding-top: 10px;
+  text-align: center;
+  font-style: italic;
+  text-shadow: 2px 2px 2px rgba(235, 89, 52, 0.779);
+  font-size: 25px;
+}
+.image{
+  height: 35%;
+  width: 60%;
+  margin-left: 17%;
+  border-radius: 40px;
+}
+.para3{
+  font-size: large;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.slider-container {
+  width: 100%;
+  height: fit-content;
+  padding: 0px 0;
+  overflow: auto;
+}
+.slider-container::-webkit-scrollbar {
+  width: 80px;
+  height: 5px;
+}
+.slider-container::-webkit-scrollbar-thumb {
+  background: rgb(74, 6, 6);
+  border-radius: 10px;
+}
+.slider-container::-webkit-scrollbar-track {
+  background: rgba(224, 224, 224, 0.2);
+}
+
+.cards-holder {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 400px;
+  height: 400px;
+  background: rgb(233, 197, 171);
+  box-shadow: 1px 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  margin: 0 10px;
+  border-radius: 20px;
+  /* animation: scroll 10s linear infinite; */
+}
+.title {
+  font-size: 25px;
+  font-weight: 200;
+  padding: 5px 5px 5px 5px;
+}
+.subtitle {
+  font-size: 20px;
+  text-align: center;
+}
+.list{
+  font-size: large;
+  text-align: center;
+}
+.list1{
+  font-size: large;
+  text-align: justify;
+}
+.card span {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  font-size: 30px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+table, th, td {
+  border: 1px solid;
+}
+.evaluation{
+  background-color: white;
+}
+.heading5{
+  text-align: center;
+  font-style: italic;
+  text-shadow: 2px 2px 2px rgba(235, 89, 52, 0.779);
+  font-size: 25px;
+
+}
+.team{
+  background-image: url("images/travel6.jpeg");
+  height: 100%;
+  background-size: cover;
+}
+.heading6{
+  text-align: center;
+  padding-top: 20px;
+  margin-left: 40%;
+  font-style: italic;
+  text-shadow: 2px 2px 2px rgba(235, 89, 52, 0.779);
+  font-size: 30px;
+}
+.para6{
+  font-size: large;
+  text-align: center;
+  font-style: italic;
+  margin-left: 45%;
+  font-weight: bold;
+}
+.column {
+  float: right;
+  width: 33.33%;
+  padding: 8px;
+}
+.team1{
+  height: 120px;
+  width: 120px;
+  float: right;
+  margin-left: 80%;
+  border-radius: 100px;
+  margin-right: 10%;
+}
+.team2{
+  margin-left: 60%;
+  padding-top: 50px;
+}
+.team3{
+  margin-left: 55%;
+  padding-left: 10px;
+  font-size: 14px;
+}
