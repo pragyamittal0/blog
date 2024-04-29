@@ -12,6 +12,8 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#method">Methodology</a></li>
                 <li><a href="#evaluation">Evaluation</a></li>
+                <li><a href="#challenges">Challenges</a></li>
+                <li><a href="#future">Future Work</a></li>
                 <li><a href="#team">Team</a></li>
             </ul>
         </div>
@@ -21,7 +23,7 @@
                 <p class="para1">Are you tired of spending hours <br> searching for the perfect getaway, <br>
                     only to end up overwhelmed and <br> unsure of where to go? <br> Imagine a world where your <br> travel 
                     plans are tailored<br> to your preferences,<br> making vacation planning easy, <br> enjoyable, <br>
-                    and perfectly suited to your needs. <br>Introducing NatureQuest, <br>
+                    and perfectly suited to your needs. <br>Introducing <b>NatureQuest</b>, <br>
                     your personalized <br> travel companion.</p>
             </div>
             <div>
@@ -48,7 +50,7 @@
               <div class="cards-holder">
                 <div class="card">
                     <div class="title">Step 1</div>
-                    <div class="subtitle"><u>Data Filtering:</u>
+                    <div class="subtitle"><u>Data Filtering:</u><br>
                       <li class="list">Read travel data from an external CSV file. </li>
                       <li class="list">Filter options based on user constraints like age group, budget limit, duration, and state preference.</li>
                     </div>
@@ -56,7 +58,7 @@
                   </div>
                 <div class="card">
                   <div class="title">Step 2</div>
-                  <div class="subtitle"><u>User Input Processing:</u>
+                  <div class="subtitle"><u>User Input Processing:</u><br>
                     <li class="list">Collect user's age, budget, desired duration, and state preference through a GUI.</li>
                     <li class="list">Categorize age into groups and validate inputs for processing.</li>
                     </div>
@@ -66,7 +68,7 @@
       
                 <div class="card">
                   <div class="title">Step 3</div>
-                  <div class="subtitle"><u>Recommendation Algorithms:</u></div>
+                  <div class="subtitle"><u>Recommendation Algorithms:</u><br></div>
                   <li class="list">Thompson Sampling Algorithm for Top Recommendations </li>
                   <li class="list">Multi-factor Collaborative Filtering (CF) Algorithm for Top Recommendations </li>
                   <span>➜ </span>
@@ -74,8 +76,8 @@
       
                 <div class="card">
                   <div class="title"></div>
-                  <div class="subtitle"><u>Thompson Sampling Algorithm</u>
-                  <li class="list1"> employed to suggest top travel options based on user preferences and constraints. </li>
+                  <div class="subtitle"><u>Thompson Sampling Algorithm</u><br>
+                  <li class="list1"> Employed to suggest top travel options based on user preferences and constraints. </li>
                   <li class="list1"> Success probabilities for each travel option are sampled from a Beta distribution using Thompson Sampling.</li>
                   <li class="list1"> Arm successes and failures are updated based on observed rewards (ratings) to refine future recommendations. </li>
                   <li class="list1"> Recommendations are displayed for either the top 3 or top 5 travel options</li>  
@@ -85,8 +87,8 @@
       
                 <div class="card">
                     <div class="title"></div>
-                    <div class="subtitle"><u>Multi-factor Collaborative Filtering (CF) Algorithm</u>
-                    <li class="list1"> complex algorithm based on multi-factor collaborative filtering is utilized to prioritize travel options </li>
+                    <div class="subtitle"><u>Multi-factor Collaborative Filtering (CF) Algorithm</u><br>
+                    <li class="list1"> Complex algorithm based on multi-factor collaborative filtering is utilized to prioritize travel options </li>
                     <li class="list1">User inputs, such as age group and state preference, are considered along with the ratings, duration, and budget of travel options </li>
                     <li class="list1"> Weight factors are assigned to rating, duration, and budget to calculate a composite score for each option. </li>
                     <li class="list1"> Options are ranked based on this composite score, and the top 3 or top 5 recommendations are presented to the user.</li>  
@@ -96,7 +98,7 @@
       
                 <div class="card">
                   <div class="title">Step 4</div>
-                  <div class="subtitle"><u>Result Presentation</u></div>
+                  <div class="subtitle"><u>Result Presentation</u><br></div>
                   <li class="list"> Display top recommended travel options, including location, activity, duration, budget, and ratings.</li>
                   <li class="list">Provide clear insights to help users make informed travel decisions.</li>
                 </div>
@@ -116,7 +118,7 @@
                 <div class="card">
                   <div class="title">Precision :</div>
                   <div class="subtitle">
-                    <p>Precision is a metric used to evaluate the performance of a recommendation system, particularly in the context of information retrieval. It measures the accuracy of the system by calculating the proportion of correctly recommended items (relevant items) among all the items recommended by the system.</p>
+                    <p class="list">Precision is a metric used to evaluate the performance of a recommendation system, particularly in the context of information retrieval. It measures the accuracy of the system by calculating the proportion of correctly recommended items (relevant items) among all the items recommended by the system.</p>
                   </div>
                   <span>➜ </span>
                 </div>
@@ -155,22 +157,22 @@
                           <tr>
                               <td>Thompson Sampling </td>
                               <td>MAP</td>
-                              <td>1.0</td>
+                              <td>0.47</td>
                           </tr>
                           <tr>
                               <td>Thompson Sampling</td>
                               <td>NDCG</td>
-                              <td>1.5</td>
+                              <td>0.514</td>
                           </tr>
                           <tr>
                               <td>MultiFactor CF</td>
                               <td>MAP</td>
-                              <td>0.866</td>
+                              <td>0.833</td>
                           </tr>
                           <tr>
                             <td>MultiFactor CF</td>
                             <td>NDCG</td>
-                            <td>1.23</td>
+                            <td>0.195</td>
                         </tr>
                       </tbody>
                     </table>     
@@ -180,17 +182,25 @@
                 <div class="card">
                   <div class="title">Analysis</div>
                   <div class="subtitle">
-                    <li class="list">NDCG evaluates recommendation quality by considering the relevance and ranking of recommendations.</li>
-                    <li class="list">It computes the Discounted Cumulative Gain (DCG) for recommended items, normalized against the ideal DCG.</li>
-                    <li class="list">NDCG values closer to 1 signify more accurate and relevant recommendations.
-                    </li>
-    
+                    <li class="list">MultiFactor CF outperforms Thompson Sampling in terms of MAP, suggesting that it provides more relevant recommendations overall.</li>
+                    <li class="list">Thompson Sampling performs better than MultiFactor CF in terms of NDCG, indicating that it is more effective at ranking relevant items higher in the recommendation list based on their relevance to the user.</li>
                     </div>
                     <span>➜ </span>
                 </div>
-            </div>
         </div>
-      
+        </div>
+        <div id="challenges">
+          <h2 class="heading"> Challenges </h2>
+          <p class="para1">
+            Developing the NatureQuest recommendation system faced significant challenges due to a limited dataset. This constraint hindered the creation and evaluation of models, particularly for algorithms like Thompson Sampling and MultiFactor Collaborative Filtering. The lack of diverse and detailed data on user preferences, locations, activities, and budgets impacted the construction of effective recommendation models and the evaluation using metrics like MAP and NDCG.
+          </p>
+      </div>
+      <div id="future">
+        <h2 class="heading"> Future Work </h2>
+        <p class="para1">
+          Future enhancements for the recommendation system include integrating web scraping to fetch direct links to recommended locations, incorporating destination images for a more immersive experience, and improving the graphical user interface (GUI) for better usability and aesthetics. Web scraping will provide up-to-date information, including real-time availability and reviews, enriching the user's decision-making process. Images of locations will enhance visual context and engagement, while refining the GUI with intuitive design and interactive features will improve user experience, fostering greater engagement and satisfaction.
+        </p>
+    </div>
     <div class="team" id="team">
       <h2 class="heading6">Team</h2>
       <p class="para6">The project is developed as a part of coursework <br>Information Storage and Retrieval at Texas A&M University <br>under the guidance of Professor James Caverlee. </p>
@@ -214,10 +224,18 @@
             <p class="team3"><i>Ruthvik Kanumuri </i></p>
           </div>
       </div>
-      <p class="para6"> Conclusion - NatureQuest simplifies vacation planning by tailoring travel plans <br>
-         to your preferences. Our innovative approach, <br> integrating Thompson Sampling map and MultiFactor CF map, <br> ensures personalized and enjoyable getaways. <br>
-         We are dedicated to providing unique and sustainable travel experiences.</p>
+      <p class="para6"> Conclusion - NatureQuest simplifies vacation planning by <br> tailoring travel plans 
+         to your preferences.<br> Our innovative approach, integrating <br> Thompson Sampling map and MultiFactor CF map, <br> ensures personalized and enjoyable getaways.<br> 
+         We are dedicated to providing unique and sustainable <br> travel experience.</p>
+        <div class="button-container">
+      <a href="https://github.com/kruthvik007/NatureQuest" class="para6">
+        <button class="but1">PROJECT</button>
+      </a> <br>
+      <a href="https://youtu.be/4PQtKwQ1VTw" class="para6">
+        <button class="but1">VIDEO</button>
+      </a>
       </div>
+    </div>
     </div>
     </body>
 </html>
