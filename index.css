@@ -8,24 +8,38 @@
     text-align: left;
     
 }
-.intro1{
+/*.intro1{
   background-image: url("images/travel2.jpeg");
   background-size: cover;
   height: 100%;
+}*/
+.intro1 {
+  display: grid;
+  align-items: center; 
+  grid-template-columns: 2fr 2fr;
+  column-gap: 5px;
+  padding-right: 20px;
+ }
+.image2{
+  width: 90%;
+  height: 60%;
 }
+ .text {
+   font-size: 70px;
+ }
 .heading2{
-  text-align: center;
+  text-align: left;
   font-style: italic;
   text-shadow: 2px 2px 2px rgba(235, 89, 52, 0.779);
   font-size: 25px;
-  padding-top: 200px;
+  padding-top: 0px;
   padding-left: 17px;
 }
 .para1{
     padding-bottom: 0px;
     padding-top: 10px;
-    padding-left: 15px;
-    text-align: center;
+    padding-left: 20px;
+    text-align: justify;
     font-size: 25px;
     font-style: italic;
 }
@@ -37,9 +51,11 @@
 }
 
 .motivation{
-    background-image: url("images/travel2.jpeg");
-    height: 100%;
-    background-size: cover;
+  display: grid;
+  align-items: center; 
+  grid-template-columns: 2fr 2fr;
+  column-gap: 5px;
+  padding-right: 20px;
     
 }
 .heading3{
@@ -47,18 +63,21 @@
     font-style: italic;
     text-shadow: 2px 2px 2px rgba(235, 89, 52, 0.779);
     font-size: 25px;
-    padding-top: 200px;
+    padding-top: 20px;
     padding-left: 17px;
 }
 .para2{
-  padding-bottom: 0px;
   padding-top: 10px;
   padding-left: 15px;
   margin-left: 2%;
-  text-align: center;
+  text-align: justify;
   font-size: 25px;
   font-style: italic;
     
+}
+.image1{
+  width: 90%;
+  height: 60%;
 }
 .navbar {
   background-color: #333;
@@ -219,11 +238,7 @@ table, th, td {
   font-size: 25px;
 
 }
-.team{
-  background-image: url("images/travel6.jpeg");
-  height: 100%;
-  background-size: cover;
-}
+
 .heading6{
   text-align: center;
   padding-top: 20px;
@@ -239,10 +254,26 @@ table, th, td {
   margin-left: 50%;
   font-weight: bold;
 }
+
+.image4{
+  width: 45%;
+  height: 70%;
+
+}
+.image6{
+  width: 80%;
+  height: 60%;
+}
 .column {
   float: right;
   width: 33.33%;
   padding: 8px;
+}
+.team{
+  background-image: url("images/travel6.jpeg");
+  background-size: cover;
+  height: 100%;
+  
 }
 .team1{
   height: 120px;
@@ -265,4 +296,8 @@ table, th, td {
   background-color: black;
   color: white;
   border-radius: 2px;
+  height: 40px;
+  width: 80px;
+  text-align: center;
+  font-weight: bold;
 }
